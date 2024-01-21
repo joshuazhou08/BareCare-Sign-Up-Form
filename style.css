@@ -1,7 +1,14 @@
+:root{
+    --main-color: rgb(234, 239, 242);
+    --margin-left: 100px;
+}
 body{
     margin: 0;
     display: flex;
+    background-color: var(--main-color);
+    justify-content: space-between;
 }
+
 fieldset{
     border: 0;
     margin: 0;
@@ -10,19 +17,56 @@ fieldset{
 legend{
     padding: 0;
 }
-img{
-    width: 35%;
-    height: 100vh;
-    object-fit: cover;
-}
 ul{
     padding: 0;
+}
+/* end of reset */
+aside{
+    position: relative;
+}
+.logo,.logo-wrapper{
+    position: absolute
+}
+.logo-wrapper{
+    height: calc(50px + 10vh);
+    width: 35vw;
+    background-color: rgba(128, 128, 128, 0.455);
+    top: 20vh;
+}
+.logo{
+    height: calc(50px + 10vh);
+    left: 35%;
+}
+img[alt="Yosemite Rock Formations"]{
+    width: 35vw;
+    height: 100vh;
+    object-fit: cover;
+    object-position: left;
+    filter: contrast(1.5);
 }
 li{
     display: flex;
     padding: 10px 0;
-    
 }
 li > .input-wrapper > label{
     display: block;
+}
+body>div:first-of-type{
+    box-sizing: border-box;
+    width: 65vw;
+}
+header{
+    margin-left: var(--margin-left);
+}
+form{
+    background-color: white;
+    padding-left: var(--margin-left);
+    width: auto;
+}
+fieldset>legend{
+    position: relative;
+    top: 15px
+}
+.submit-wrapper{
+    margin-left: var(--margin-left)
 }
