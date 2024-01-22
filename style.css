@@ -5,7 +5,6 @@
 html{
     height: 100vh;
     margin: 0;
-    overflow-y: hidden;
 }
 body{
     margin: 0;
@@ -29,7 +28,7 @@ ul{
 /* end of reset */
 aside{
     position: relative;
-    height: 100%;
+    min-height: calc(360px + 10vh)
 }
 .logo,.logo-wrapper{
     position: absolute
@@ -46,7 +45,7 @@ aside{
 }
 img[alt="Yosemite Rock Formations"]{
     width: 35vw;
-    height: 100%;
+    height: max(100%,360px + 10vh);
     object-fit: cover;
     object-position: left;
     filter: contrast(1.5);
@@ -61,6 +60,7 @@ li > .input-wrapper > label{
 body>div:first-of-type{
     box-sizing: border-box;
     width: 65vw;
+    margin-top: 10vh;
 }
 header{
     margin-left: var(--margin-left);
@@ -77,4 +77,5 @@ fieldset>legend{
 .submit-wrapper{
     margin-left: var(--margin-left);
     margin-top: 10px;
+    height: 60px;
 }
