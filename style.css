@@ -2,11 +2,17 @@
     --main-color: rgb(234, 239, 242);
     --margin-left: 100px;
 }
+html{
+    height: 100vh;
+    margin: 0;
+    overflow-y: hidden;
+}
 body{
     margin: 0;
     display: flex;
     background-color: var(--main-color);
     justify-content: space-between;
+    height: 100%;
 }
 
 fieldset{
@@ -23,6 +29,7 @@ ul{
 /* end of reset */
 aside{
     position: relative;
+    height: 100%;
 }
 .logo,.logo-wrapper{
     position: absolute
@@ -39,7 +46,7 @@ aside{
 }
 img[alt="Yosemite Rock Formations"]{
     width: 35vw;
-    height: 100vh;
+    height: 100%;
     object-fit: cover;
     object-position: left;
     filter: contrast(1.5);
@@ -68,5 +75,6 @@ fieldset>legend{
     top: 15px
 }
 .submit-wrapper{
-    margin-left: var(--margin-left)
+    margin-left: var(--margin-left);
+    margin-top: 10px;
 }
